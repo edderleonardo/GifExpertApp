@@ -15,9 +15,9 @@ export const GifExpertApp = () => {
   }
 
   return (
-    <>
+    <div className="container mx-auto px-4">
       {/* Titulo */}
-      <h1>GifExpertApp</h1>
+      <h1 className="text-3xl font-bold underline text-center mt-4">GifExpertApp</h1>
       {/* Input Search */}
       {/* INFO: Emitir un evento para agregar una nueva categoría */}
       <AddCategory onNewCategory={onAddCategory} />
@@ -29,6 +29,6 @@ export const GifExpertApp = () => {
             category={category} />
         ))}
 
-    </>
+    </div>
   );
 };
